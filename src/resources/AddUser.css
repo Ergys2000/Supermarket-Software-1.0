@@ -1,0 +1,39 @@
+.root{
+    -fx-background-color:#2e2d2d;
+    -fx-background-position: right top;
+    -fx-background-size: 100% 100%;
+}
+
+.button {
+    -fx-font-family: monospace;
+    -fx-font-style: italic;
+    -fx-background-color: black;
+    -fx-color: #3d5a80;
+    -fx-padding: 15px 15px 15px 15px;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-text-fill:white;
+}
+.button:hover{
+    -fx-background-color: #999999;
+    -fx-text-fill: #0b0126;
+}
+
+.text-field {
+    -fx-background-color: grey;
+	-fx-background-insets: 0, 0 0 1 0;
+}
+.text-field:focused{
+	-fx-background-color: black;
+	-fx-text-fill: grey;
+}
+.combo-box {
+    -fx-background-color: -fx-text-box-border, -fx-background;
+	-fx-background-insets: 0, 0 0 1 0;
+}
+
+.label {
+    -fx-font-family: monospace;
+    -fx-font-style: italic;
+    -fx-text-fill:#c9c9c9;
+}

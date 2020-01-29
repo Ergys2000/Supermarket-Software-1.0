@@ -1,0 +1,151 @@
+.root{
+    -fx-background-image: url('Home.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right top;
+    -fx-background-size: 100% 100%;
+}
+
+.button {
+    -fx-font-family: monospace;
+    -fx-font-style: italic;
+    -fx-background-color: black;
+    -fx-color: #3d5a80;
+    -fx-padding: 15px 15px 15px 15px;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-text-fill:white;
+}
+.button:hover{
+    -fx-background-color: #999999;
+    -fx-text-fill: #0b0126;
+}
+
+.text-field {
+    -fx-background-color: grey;
+	-fx-background-insets: 0, 0 0 1 0;
+}
+.text-field:focused{
+	-fx-background-color: black;
+	-fx-text-fill: grey;
+}
+
+.textfield {
+    -fx-background-color: black;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 20px;
+    -fx-text-fill: white;
+	-fx-border-radius: 10px;
+	-fx-padding: 15px 15px 15px 15px;
+}
+.textfield:focused{
+	-fx-background-color: grey;
+	-fx-text-fill: black;
+}
+.VerticalMenu {
+    -fx-background-color: black;
+}
+.VerticalMenu .button {
+    -fx-background-color: black;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-text-fill: white;
+}
+.VerticalMenu .button:focused{
+    -fx-background-color: #5e5e5e;
+    -fx-text-fill: black;
+}
+.VerticalMenu .button:hover{
+    -fx-background-color:#999999;
+    -fx-text-fill: black;
+}
+.menu-bar{
+  -fx-background-color: black;
+}
+
+.menu-bar .label {
+    -fx-font-size: 15 pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: #dedede;
+}
+.menu:hover {
+    -fx-background-color: grey;
+}
+.menu:hover .label{
+    -fx-text-fill: #0b0126;
+}
+.label {
+    -fx-font-family: monospace;
+    -fx-font-style: italic;
+    -fx-text-fill:#c9c9c9;
+}
+
+.drawPane {
+    -fx-background-color:#2e2d2d;
+}
+
+/*table css starts here*/
+.table {
+    -fx-background-color:#2d2e33;
+}
+.table-view .column-cell{
+    -fx-border-width:0;
+
+}
+.table-view .column-header{
+    -fx-background-color:black;
+}
+.table-row-cell {
+    -fx-background-color:#2d2e33;
+}
+.table-row-cell:selected, .table-row-cell:selected .table-cell{
+    -fx-background-color:#8c8d91;
+    -fx-text-fill: black;
+}
+.table-row-cell .table-cell {
+    -fx-text-fill: #a9a9ab;
+    -fx-border-width:0;
+}
+/* scroll bar starts here */
+
+/* The increment and decrement button CSS class of scrollbar */
+.table-view .increment-button ,.table-view .decrement-button {
+    -fx-background-color:black;
+	-fx-background-radius: 2em;
+}
+
+/* The main scrollbar **track** CSS class  */
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track{
+	-fx-background-color: transparent;
+	-fx-border-color: black;
+
+	-fx-background-radius: 2em;
+	-fx-border-radius:2em;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color:black;
+	-fx-background-insets: 2, 0, 0;
+	-fx-background-radius: 2em;
+}
+
+/* chart properties */
+
+.chart {
+    -fx-padding: 10px;
+    -fx-background-color: transparent;
+    -fx-legend-visible: false;
+}
+.chart-plot-background {
+    -fx-background-color:transparent;
+}
+
+.chart-pie {
+    -fx-border-color: derive(-fx-pie-color, 1%);
+    -fx-border-width: 0px;
+}
+.chart-pie-label{
+    -fx-fill: white;
+}
